@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum — Podsonic</title>
+  <meta name="description" content="Impressum und Kontaktinformationen.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/img/icon-app.svg" alt="Podsonic" class="nav-logo">
+        <span>Podsonic</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#features" class="nav-link">Features</a>
+        <a href="index.html#apple"    class="nav-link">Apple-Geräte</a>
+        <a href="index.html#download" class="nav-link">Download</a>
+        <div class="nav-sep"></div>
+        <a href="https://ko-fi.com/Elmontag" class="nav-kofi" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Support
+        </a>
+        <div class="nav-sep"></div>
+        <a href="../impressum.html" class="nav-toggle-btn"
+           onclick="localStorage.setItem('podsonic_lang','en')">
+          EN
+        </a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="site-main page-impressum">
+    <section class="page-header">
+<h1>Impressum</h1>
+</section><section class="impressum-content"><h2>Angaben gemäß § 5 TMG</h2><p>
+Ludwig Montag<br>
+E-Mail: ludwig@die-montags.eu
+</p><h2>Haftung für Inhalte</h2><p>Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.</p><h2>Haftung für Links</h2><p>Diese Website kann Links zu externen Webseiten Dritter enthalten. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar.</p><h2>Urheberrecht</h2><p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung.</p><h2>Open Source</h2><p>Podsonic ist Open-Source-Software. Der Quellcode ist unter den jeweiligen Lizenzbedingungen verfügbar.</p></section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/icon-app.svg" alt="Podsonic" class="footer-logo">
+        <span>Podsonic</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#apple">Apple-Geräte</a>
+        <a href="index.html#download">Download</a>
+        <a href="https://ko-fi.com/Elmontag" target="_blank" rel="noopener">Support</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 Podsonic — Musikbibliothek &amp; Synchronisation.</div>
+    </div>
+  </footer>
+
+  <script>
+    const ham = document.getElementById('nav-hamburger');
+    const nav = document.getElementById('nav-links');
+    if (ham && nav) {
+      ham.addEventListener('click', () => nav.classList.toggle('open'));
+    }
+  </script>
+
+  <script>
+    (function() {
+      var links = document.querySelectorAll('[data-dl-asset]');
+      if (!links.length) return;
+      fetch('https://api.github.com/repos/Elmontag/podsonic-releases/releases/latest')
+        .then(function(r) { return r.json(); })
+        .then(function(release) {
+          var assets = release.assets || [];
+          links.forEach(function(el) {
+            var ext = el.getAttribute('data-dl-asset').toLowerCase();
+            var asset = assets.find(function(a) {
+              return a.name.toLowerCase().endsWith('.' + ext);
+            });
+            if (asset) el.href = asset.browser_download_url;
+          });
+        })
+        .catch(function() {});
+    })();
+  </script>
+
+</body>
+</html>

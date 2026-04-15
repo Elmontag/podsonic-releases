@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podsonic — Music Library Manager — Podsonic</title>
+  <meta name="description" content="Desktop music library manager — iTunes alternative with Subsonic server sync and local device sync. Windows, macOS, Linux.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/img/icon-app.svg" alt="Podsonic" class="nav-logo">
+        <span>Podsonic</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#features" class="nav-link">Features</a>
+        <a href="index.html#apple"    class="nav-link">Apple Devices</a>
+        <a href="index.html#download" class="nav-link">Download</a>
+        <div class="nav-sep"></div>
+        <a href="https://ko-fi.com/Elmontag" class="nav-kofi" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Support
+        </a>
+        <div class="nav-sep"></div>
+        <a href="de/index.html" class="nav-toggle-btn"
+           onclick="localStorage.setItem('podsonic_lang','de')">
+          DE
+        </a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="site-main page-home">
+    <section class="hero" id="hero">
+<img src="assets/img/icon-app.svg" alt="Podsonic" class="hero-icon">
+<h1>The music manager<br><span class="accent">your library deserves.</span></h1>
+<p class="hero-sub">
+Podsonic is a desktop music manager for Windows, macOS and Linux — a modern iTunes alternative with Subsonic server integration, local library management and device sync.
+</p>
+<div class="hero-actions">
+<a href="#download" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Download</a>
+<a href="#features" class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg> Features</a>
+</div>
+</section><div class="feature-strip">
+<div class="feature-strip-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg> Music library</div>
+<div class="feature-strip-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg> Subsonic sync</div>
+<div class="feature-strip-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="2" y1="12" y2="12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" x2="6.01" y1="16" y2="16"/><line x1="10" x2="10.01" y1="16" y2="16"/></svg> Device sync</div>
+<div class="feature-strip-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg> Windows · macOS · Linux</div>
+</div><section class="section" id="features">
+<div class="section-header">
+<div class="section-eyebrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg> Features</div>
+<h2 class="section-title">Everything iTunes should have been.</h2>
+<p class="section-desc">Manage your music collection, sync with your Subsonic server and keep your devices up to date — all from one app.</p>
+</div>
+<div class="feature-cards"><div class="feature-card">
+<div class="feature-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg></div>
+<h3>Music Library</h3>
+<p>A powerful local music library with instant search, tag editing and automatic cover art.</p>
+<ul>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Edit ID3 tags with a non-destructive overlay model</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Automatic cover art from multiple online sources</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Instant full-text search via SQLite FTS5</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> FLAC, MP3, AAC and more</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Artist and album info from TheAudioDB &amp; Last.fm</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Synced &amp; plain lyrics via <a href="https://lrclib.net" target="_blank" rel="noopener">LRCLib</a></li>
+</ul>
+</div><div class="feature-card">
+<div class="feature-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg></div>
+<h3>Subsonic Sync</h3>
+<p>Connect to any Subsonic-compatible server and selectively sync music to your local library.</p>
+<ul>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Navidrome, Airsonic, Gonic and all Subsonic-compatible servers</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Selective sync per artist, album or playlist</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Live progress with real-time WebSocket updates</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Network-safe: atomic writes protect NAS mounts</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Background sync — keep using the app while it downloads</li>
+</ul>
+</div><div class="feature-card">
+<div class="feature-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="2" y1="12" y2="12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" x2="6.01" y1="16" y2="16"/><line x1="10" x2="10.01" y1="16" y2="16"/></svg></div>
+<h3>Device Sync</h3>
+<p>Transfer your library to portable devices and local folders — including iPod support.</p>
+<ul>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Sync to local folders and mounted drives</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> iPod Classic support (see compatibility below)</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Full-screen now-playing with album art</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Queue management — reorder, shuffle, save as playlist</li>
+</ul>
+</div></div>
+</section><section class="screenshot-section">
+<div class="screenshot-wrap">
+<div class="screenshot-frame">
+<div class="screenshot-chrome">
+<span class="chrome-dot close"></span>
+<span class="chrome-dot min"></span>
+<span class="chrome-dot max"></span>
+<span class="chrome-title">Podsonic</span>
+</div>
+<img src="assets/img/screenshot.png" alt="Podsonic Screenshot" class="screenshot-img">
+</div>
+</div>
+</section><section class="section apple-section" id="apple">
+<div class="section-header">
+<div class="section-eyebrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></svg> Apple Devices</div>
+<h2 class="section-title">iPod support — seriously.</h2>
+<p class="section-desc">Podsonic can sync your music library directly to an iPod Classic using the native iTunes database format.</p>
+</div>
+<p class="apple-note">
+Apple devices are supported as a sync target for typical use cases.<br>
+The following table shows the current test status for iPod models.<br>
+<strong>Note:</strong> iTunes detects when the database has been written by a different app and may prompt to re-sync — this is a known limitation.
+</p>
+<table class="device-table">
+<thead>
+<tr>
+<th>Device</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iPod Classic 6th Gen</td>
+<td><span class="status-badge status-ok"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Tested</span></td>
+<td>Fully tested and working</td>
+</tr>
+<tr>
+<td>iPod Classic 5th Gen</td>
+<td><span class="status-badge status-likely"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg> Likely works</span></td>
+<td>Same format, not tested</td>
+</tr>
+<tr>
+<td>iPod Classic 7th Gen</td>
+<td><span class="status-badge status-likely"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg> Likely works</span></td>
+<td>Same format, not tested</td>
+</tr>
+<tr>
+<td>iPod Classic (other generations)</td>
+<td><span class="status-badge status-unknown">Untested</span></td>
+<td>Unknown compatibility</td>
+</tr>
+<tr>
+<td>iPod Nano (all generations)</td>
+<td><span class="status-badge status-no">Likely not working</span></td>
+<td>Different firmware / protocol</td>
+</tr>
+<tr>
+<td>iPod Shuffle (all generations)</td>
+<td><span class="status-badge status-no">Likely not working</span></td>
+<td>Different firmware / protocol</td>
+</tr>
+<tr>
+<td>iPod Touch (all generations)</td>
+<td><span class="status-badge status-no">Likely not working</span></td>
+<td>iOS-based, different protocol</td>
+</tr>
+</tbody>
+</table>
+</section><section class="section" id="download">
+<div class="section-header">
+<div class="section-eyebrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Download</div>
+<h2 class="section-title">Get Podsonic</h2>
+<p class="section-desc">Available for Windows, macOS and Linux. Free and open source.</p>
+</div>
+<div class="download-cards"><div class="dl-card">
+<div class="dl-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></div>
+<h3>Windows</h3>
+<p class="dl-card-desc">Windows 10 or later. NSIS installer.</p>
+<div class="dl-links">
+<a href="https://github.com/Elmontag/podsonic-releases/releases/latest" class="btn btn-primary" target="_blank" rel="noopener" data-dl-asset="exe">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Download .exe
+</a>
+</div>
+</div><div class="dl-card">
+<div class="dl-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></svg></div>
+<h3>macOS</h3>
+<p class="dl-card-desc">Universal build for Intel and Apple Silicon.</p>
+<div class="dl-links">
+<a href="https://github.com/Elmontag/podsonic-releases/releases/latest" class="btn btn-primary" target="_blank" rel="noopener" data-dl-asset="dmg">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Download .dmg
+</a>
+</div>
+</div><div class="dl-card">
+<div class="dl-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg></div>
+<h3>Linux</h3>
+<p class="dl-card-desc">AppImage (portable) or Debian/Ubuntu package.</p>
+<div class="dl-links">
+<a href="https://github.com/Elmontag/podsonic-releases/releases/latest" class="btn btn-primary" target="_blank" rel="noopener" data-dl-asset="AppImage">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Download .AppImage
+</a>
+<a href="https://github.com/Elmontag/podsonic-releases/releases/latest" class="btn btn-ghost" target="_blank" rel="noopener" data-dl-asset="deb">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg> Download .deb
+</a>
+</div>
+</div></div>
+<p class="dl-note">All releases on <a href="https://github.com/Elmontag/podsonic-releases/releases" target="_blank" rel="noopener">GitHub Releases</a></p>
+</section><section class="support-section">
+<div class="section-eyebrow" style="justify-content:center;margin-bottom:16px"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Support</div>
+<h2 class="section-title" style="text-align:center;font-size:1.6rem;margin-bottom:12px">Enjoying Podsonic?</h2>
+<p>Podsonic is free and open source. If it saves you from iTunes, consider buying me a coffee.</p>
+<a href="https://ko-fi.com/Elmontag" class="btn btn-kofi" target="_blank" rel="noopener">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> Support on Ko-fi
+</a>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/icon-app.svg" alt="Podsonic" class="footer-logo">
+        <span>Podsonic</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#apple">Apple Devices</a>
+        <a href="index.html#download">Download</a>
+        <a href="https://ko-fi.com/Elmontag" target="_blank" rel="noopener">Support</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 Podsonic — Music library &amp; sync.</div>
+    </div>
+  </footer>
+
+  <script>
+    const ham = document.getElementById('nav-hamburger');
+    const nav = document.getElementById('nav-links');
+    if (ham && nav) {
+      ham.addEventListener('click', () => nav.classList.toggle('open'));
+    }
+  </script>
+
+  <script>
+    (function() {
+      var links = document.querySelectorAll('[data-dl-asset]');
+      if (!links.length) return;
+      fetch('https://api.github.com/repos/Elmontag/podsonic-releases/releases/latest')
+        .then(function(r) { return r.json(); })
+        .then(function(release) {
+          var assets = release.assets || [];
+          links.forEach(function(el) {
+            var ext = el.getAttribute('data-dl-asset').toLowerCase();
+            var asset = assets.find(function(a) {
+              return a.name.toLowerCase().endsWith('.' + ext);
+            });
+            if (asset) el.href = asset.browser_download_url;
+          });
+        })
+        .catch(function() {});
+    })();
+  </script>
+
+</body>
+</html>

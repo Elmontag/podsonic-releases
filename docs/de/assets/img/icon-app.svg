@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198 264">
+  <defs>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ff5560"/>
+      <stop offset="48%"  stop-color="#fc3c44"/>
+      <stop offset="100%" stop-color="#c42030"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="86" width="26" height="92" rx="13" fill="url(#barGrad)" opacity="0.85"/>
+  <rect x="45" y="42" width="26" height="180" rx="13" fill="url(#barGrad)" opacity="0.92"/>
+  <rect x="86" y="4" width="26" height="256" rx="13" fill="url(#barGrad)" opacity="1"/>
+  <rect x="127" y="42" width="26" height="180" rx="13" fill="url(#barGrad)" opacity="0.92"/>
+  <rect x="168" y="86" width="26" height="92" rx="13" fill="url(#barGrad)" opacity="0.85"/>
+</svg>
