@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podsonic 1.0.0 — Erstveröffentlichung — Podsonic</title>
+  <meta name="description" content="Desktop-Musikmanager — iTunes-Alternative mit Subsonic- und Gerätesync für Windows, macOS und Linux.">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/icon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/img/icon-app.svg" alt="Podsonic" class="nav-logo">
+        <span>Podsonic</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="../features.html" class="nav-link">Features</a>
+        <a href="../index.html#apple"    class="nav-link">Apple-Geräte</a>
+        <a href="../index.html#download" class="nav-link">Download</a>
+        <a href="../news.html"           class="nav-link">News</a>
+        <div class="nav-sep"></div>
+        <a href="https://ko-fi.com/Elmontag" class="nav-kofi" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg> Kaffee spendieren
+        </a>
+        <div class="nav-sep"></div>
+        <a href="../../news/2025-v1-0-0-release.html" class="nav-toggle-btn"
+           onclick="localStorage.setItem('podsonic_lang','en')">
+          EN
+        </a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="site-main ">
+    <section class="news-post prose"><p class="news-date">Veröffentlicht am 2026-04-18</p><p>Wir freuen uns, die erste öffentliche Version von <strong>Podsonic 1.0.0</strong> ankündigen zu können!</p>
+<h2>Was ist Podsonic?</h2>
+<p>Podsonic ist ein Desktop-Musikmanager und Sync-Tool für Windows, macOS und Linux. Es ist als moderne iTunes-Alternative konzipiert und unterstützt:</p>
+<ul>
+<li><strong>Lokale Musikbibliotheken</strong> — Musiksammlung auf dem eigenen Computer verwalten</li>
+<li><strong>Subsonic-kompatible Server</strong> — Musik von Navidrome, Airsonic und anderen streamen und synchronisieren</li>
+<li><strong>Apple-Geräte (iPod Classic)</strong> — Bibliothek direkt auf klassische iPods ohne iTunes übertragen</li>
+</ul>
+<h2>Highlights</h2>
+<ul>
+<li>Vollwertiger Musikplayer mit Warteschlange, Shuffle, Repeat und Gapless Playback</li>
+<li>Tag-Editor für Tracks und Alben (Titel, Künstler, Album, Jahr, Genre, Coverart u.v.m.)</li>
+<li>Album-Art-Abruf über TheAudioDB und Last.fm</li>
+<li>Volltextsuche in der gesamten Bibliothek</li>
+<li>Dark- und Light-Theme</li>
+<li>Verfügbar für Windows, macOS und Linux</li>
+</ul>
+<h2>Download</h2>
+<p>Zum <a href="/index.html#download">Download</a> der aktuellen Version für deine Plattform.</p>
+<p>Wir freuen uns über Feedback! Auf <a href="https://github.com/Elmontag/podsonic-releases/releases">GitHub</a> können Probleme gemeldet und der Entwicklungsstand verfolgt werden.</p>
+</section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../assets/img/icon-app.svg" alt="Podsonic" class="footer-logo">
+        <span>Podsonic</span>
+      </div>
+      <div class="footer-links">
+        <a href="../features.html">Features</a>
+        <a href="../index.html#apple">Apple-Geräte</a>
+        <a href="../index.html#download">Download</a>
+        <a href="../news.html">News</a>
+        <a href="https://ko-fi.com/Elmontag" target="_blank" rel="noopener">Kaffee spendieren</a>
+        <a href="../impressum.html">Impressum</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 Podsonic — Musikbibliothek &amp; Synchronisation.</div>
+    </div>
+  </footer>
+
+  <script>
+    const ham = document.getElementById('nav-hamburger');
+    const nav = document.getElementById('nav-links');
+    if (ham && nav) {
+      ham.addEventListener('click', () => nav.classList.toggle('open'));
+    }
+  </script>
+
+  <script>
+    (function() {
+      var links = document.querySelectorAll('[data-dl-asset]');
+      if (!links.length) return;
+      fetch('https://api.github.com/repos/Elmontag/podsonic-releases/releases/latest')
+        .then(function(r) { return r.json(); })
+        .then(function(release) {
+          var assets = release.assets || [];
+          links.forEach(function(el) {
+            var ext = el.getAttribute('data-dl-asset').toLowerCase();
+            var asset = assets.find(function(a) {
+              return a.name.toLowerCase().endsWith('.' + ext);
+            });
+            if (asset) el.href = asset.browser_download_url;
+          });
+        })
+        .catch(function() {});
+    })();
+  </script>
+
+</body>
+</html>
